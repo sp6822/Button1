@@ -19,13 +19,12 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myButton = (Button) findViewById(R.id.albert);
+        myButton = (Button) findViewById(R.id.go);
 
     }
       public void go(view view) {
-                clickCount++;
-                if (clickCount == 1) {
-        myButton.setText("Oh, yea, I’ve been clicked!");
+            clickCount++;
+            myButton.setText("This is a click number:"+clickCount)
         }
     }
 
