@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
     }
       public void go(view view) {
             clickCount++;
-            myButton.setText("This is a click number:"+clickCount)
+            myButton.setText("This is a click number:"+clickCount);
+            if (clickCount%7==0){
+                myButton.setText("Boom");
         }
     }
 
